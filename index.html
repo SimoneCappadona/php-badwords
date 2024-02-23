@@ -11,8 +11,28 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- My css -->
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    
+    <div class="container mt-5">
+          <h2>Badword Form</h2>
+          <!-- Get PhP -->
+          <form action="php/index.php" method="get">
+            <div class="mb-3">
+                <!-- Form control -->
+              <label for="badword" class="form-laber">Parola da censurare</label>
+              <input type="text" class="form-control" id="badword"name="badword" placeholder="parola da censurare"/>
+            </div>
+            <!-- Text area  -->
+            <div class="mb-3">
+              <label for="paragraph" class="form-laber"></label>
+              <textarea class="form-control" id="paragraph" name="paragraph" rows="3"></textarea>
+            </div>
+            <!-- Button for sending and reset -->
+            <button class="btn btn-primary" type="subtim">Invia</button>
+            <button class="btn btn-warning" type="reset">Reset</button>
+          </form>
+      </div>
 </body>
 </html>
